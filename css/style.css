@@ -1,0 +1,10 @@
+/* Menu */
+@import url(./nav.css);
+
+/* Global */
+@import url(./global.css);
+
+/* Utilidades */
+@import url(./utilidades/componentes.css);
+@import url(./utilidades/cores.css);
+@import url(./utilidades/tipografia.css);

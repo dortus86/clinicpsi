@@ -1,0 +1,33 @@
+.logo {
+    width: 200px;
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+.menu {
+    background-color: var(--cor-branco-00);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.02);
+}
+
+.ct-menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ct-menu-lista {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 36px;
+}
+
+.ct-menu-lista li a {
+    transition: 0.3s ease;
+}
+
+.ct-menu-lista li a:hover{
+    color: var(--cor-roxo-500);
+}

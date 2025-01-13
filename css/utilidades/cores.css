@@ -1,0 +1,33 @@
+:root {
+    --cor-branco-00: #ffffff;
+    --cor-branco-01: #F7F8F8;
+    --cor-branco-02: #f2f3f4;
+
+
+    --cor-roxo-500: #9B7CB9;
+    --cor-roxo-600: #755690;
+
+
+    --cor-cinza-950: #26282B;
+}
+
+.cor-branco-00 {
+    color: var(--cor-branco-00);
+}
+
+.cor-branco-01 {
+    color: var(--cor-branco-01);
+}
+
+.cor-branco-02 {
+    color: var(--cor-branco-02);
+}
+
+
+.cor-roxo-500 {
+    color: var(--cor-roxo-500);
+}
+
+.cor-roxo-600 {
+    color: var(--cor-roxo-02);
+}
