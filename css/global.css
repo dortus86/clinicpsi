@@ -7,6 +7,7 @@
 body {
     font-family: "Poppins", serif;
     background-color: var(--cor-branco-01);
+    height: 2000px;
 }
 
 h1, ul, p, h2, h3, blockquote, dd {

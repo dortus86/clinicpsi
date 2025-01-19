@@ -24,12 +24,13 @@ function redefinir() {
     const largura = window.innerWidth;
     
     if (largura > 900) {
-        menu.removeChild(btn);
-        header.appendChild(btn);
+        if (menu.contains(btn)) {
+            header.appendChild(btn);
+        }
     } else {
         menu.appendChild(btn);
     }
-    menu.classList.remove("active");
-    btn.classList.remove("active");
+    // menu.classList.remove("active");
+    // btn.classList.remove("active");
 }
 window.addEventListener('resize', redefinir)

@@ -7,6 +7,7 @@
 #header {
     background: var(--cor-branco-00);
     height: 120px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.05);
 }
 
 .header-bg {
@@ -63,18 +64,31 @@
     .nav-list li a {
         padding: 8px;
         font-size: 1rem;
+        border-top: 1px solid var(--cor-cinza-100);
     }
+
+    .nav-list li:last-child {
+        border-bottom: 1px solid var(--cor-cinza-100);
+    }
+
     #btn-mobile {
         display: flex;
+        padding: 12px;
         background-color: transparent;
-        border: transparent;
-        border-top: 2px solid var(--cor-cinza-950);;
+        border: none;
+    }
+
+    #burger {
+        display: flex;
+        background-color:transparent;
+        border: none;
+        border-top: 2px solid var(--cor-cinza-950);
         width: 20px;
         position: relative;
         cursor: pointer;
     }
 
-    #btn-mobile::after {
+    #burger::after {
         content: "";
         position: absolute;
         width: 20px;
@@ -83,7 +97,7 @@
         background-color: var(--cor-cinza-950);
         transition: 0.3s;
     }
-    #btn-mobile::before {
+    #burger::before {
         content: "";
         position: absolute;
         width: 20px;
@@ -93,15 +107,15 @@
         transition: 0.3s;
     }
     
-    .burger #btn-mobile {
+    .burger #burger {
         border-top-color: transparent;
     }
 
-    .burger #btn-mobile::before {
+    .burger #burger::before {
         transform: rotate(135deg);
     }
 
-    .burger #btn-mobile::after {
+    .burger #burger::after {
         transform: rotate(-135deg);
         top: -8px;
     }
@@ -133,11 +147,6 @@
         margin-top: 20px;
         margin-left: 20px;
         margin-right: 20px;
-    }  
-
-    #js-header button {
-        padding: 12px 8px;
-        border: none;
-        background-color: transparent;
     }
+
 }
