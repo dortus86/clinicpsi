@@ -1,6 +1,10 @@
 /* Menu */
 @import url(./nav.css);
 
+/*Hero*/
+@import url(./hero.css);
+@import url(./sectionhero.css);
+
 /* Global */
 @import url(./global.css);
 

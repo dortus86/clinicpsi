@@ -1,0 +1,139 @@
+.conteudo {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    justify-content: center;
+    align-items: stretch;
+    gap: 0 36px;
+    padding-top: 120px;
+}
+
+.conteudo-left {
+    align-self: center;
+    padding-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: self-start;
+}
+
+.conteudo picture {
+    display: flex;
+    align-items:start;
+    justify-content: center;
+    height: 900px;
+}
+
+#img-hero-mobile {
+    display: none;
+}
+
+.title-hero {
+    font-size: 4rem;
+    font-weight: 600;
+    line-height: 1.3;
+    color: var(--cor-cinza-950);
+    margin-bottom: 32px;
+}
+
+.title-hero span {
+    color: var(--cor-verde-400);
+}
+
+.paragrafo-hero {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: var(--cor-cinza-600);
+    max-width: 560px;
+    margin-bottom: 40px;
+}
+
+.conteudo-left .botao-roxo {
+    font-size: 1rem;
+}
+
+.img-hero {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    justify-self: end;
+    z-index: 1;
+    position: relative;
+}
+
+@media (max-width: 1400px) {
+    .conteudo {
+        grid-template-columns: 1.2fr 1fr;
+    }
+    .conteudo picture {
+        height: 600px;
+    }
+    .title-hero {
+        font-size: 3rem;
+        line-height: 1.2;
+    }
+    .paragrafo-hero {
+        font-size: 1rem;
+        max-width: 500px;
+    }
+    .title-hero {
+        padding-top: 80px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .conteudo picture {
+        height: 100%;
+    }
+    .title-hero {
+        font-size: 2.5rem;
+        line-height: 1.3;
+    }
+    .paragrafo-hero {
+        font-size: 1rem;
+        max-width: 400px;
+    }
+}
+
+@media (max-width: 900px) {
+    .conteudo {
+        grid-template-columns: 1fr;
+        padding-top: 40px;
+    }
+    .conteudo picture {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .conteudo picture .img-hero {
+        display: none;
+    }
+    #img-hero-mobile {
+        display: flex;
+        margin-bottom: 40px;
+    }
+    .conteudo-left {
+        padding-bottom: 0px;
+        padding-top: 40px;
+    }
+    .paragrafo-hero {
+        max-width: 700px;
+        padding-bottom: 0;
+    }
+    .conteudo picture .botao-roxo {
+        font-size: 1rem;
+        padding: 16px 32px;
+        margin-bottom: 32px;
+    }
+}
+
+@media (max-width: 500px) {
+    .title-hero {
+        font-size: 2rem;
+        line-height: 1.3;
+        margin-bottom: 8px;
+    }
+    .paragrafo-hero {
+        font-size: 0.875rem;
+        margin-bottom: 16px;
+    }
+}

@@ -8,6 +8,10 @@
     background: var(--cor-branco-00);
     height: 120px;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.05);
+    position: fixed;
+    right: 0;
+    left: 0;
+    z-index: 100;
 }
 
 .header-bg {
@@ -44,9 +48,11 @@
 @media (max-width: 1200px) {
     .nav-list li a {
         font-size: 0.75rem;
+        padding: 8px 12px;
     }
     .nav-list {
-        gap: 4px;
+        gap: 0px;
+
     }
 }
 
@@ -59,6 +65,7 @@
     }
     .nav-list {
         display: block;
+        padding: 8px;
         gap: 0px;
     }
     .nav-list li a {

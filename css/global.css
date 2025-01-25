@@ -4,10 +4,14 @@
     box-sizing: border-box;
 }
 
+html {
+    height: 5000px;
+}
+
 body {
     font-family: "Poppins", serif;
     background-color: var(--cor-branco-01);
-    height: 2000px;
+    height: 5000px;
 }
 
 h1, ul, p, h2, h3, blockquote, dd {
@@ -28,8 +32,4 @@ img {
     max-width: 100%;
     height: auto;
     display: block;
-}
-
-img[src$=".jpg"] {
-    border-radius: 4px;
 }
