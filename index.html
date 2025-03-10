@@ -4,11 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ClinicPSI</title>
-    <link rel="preload" href="./css/style.css" as="style">
-    <link rel="stylesheet" href="./css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="preload" href="./css/style.css" as="style">
+    <link rel="stylesheet" href="./css/style.css">
+    <script>
+        document.documentElement.className += ' js'
+    </script>
+
 </head>
 <body>
     <header id="header">
@@ -21,7 +27,7 @@
             </button>
             <nav id="nav">
                 <ul class="nav-list">
-                    <li><a class="sz-16" href="#sobre">Sobre nós</a></li>
+                    <li><a class="sz-16" href="#servicos">Sobre nós</a></li>
                     <li><a href="#serviços">Serviços</a></li>
                     <li><a href="#profissionais">Profissionais</a></li>
                     <li><a href="#depoimentos">Depoimentos</a></li>
@@ -82,24 +88,432 @@
         </div>
     </section>
 
-    <section class="section-hero-mobile">
+    <section class="section-hero-mobile js-section-hero-mobile">
 
-        <div class="section-hero-conteudo-mobile">
-            <div class="icone-hero-mobile">
+        <div class="section-hero-conteudo-mobile js-section-icon-1">
+            <div id="icon-hero-one" class="icone-hero-mobile js-icon-hero-one">
                 <img src="./img/handmobile.svg" alt="ícone de aperto de mão">
             </div>
-            <p>Você nunca está sozinho. Estamos aqui para acolher.</p>
+            <p id="js-text-icon-one">Você nunca está sozinho. Estamos aqui para acolher.</p>
         </div>
 
-        <div class="section-hero-conteudo-mobile">
-            <div class="icone-hero-mobile">
+        <div class="section-hero-conteudo-mobile js-section-icon-2">
+            <div id="icon-hero-two" class="icone-hero-mobile js-icon-hero-two">
                 <img src="./img/handheartmobile.svg" alt="ícone de uma mão cuidando de um coração">
             </div>
-            <p>Equilíbrio emocional: o primeiro passo para uma vida plena.</p>
+            <p id="js-text-icon-two">Equilíbrio emocional: o primeiro passo para uma vida plena.</p>
         </div>
 
     </section>
 
+    <section class="sobre-bg">
+        <div class="container sobre-container">
+            <div class="sobre-container-titulo">
+                <h1 class="sobre-title js-sobre-title">Sobre Nós</h1>
+                <h2 class="sobre-sub-title js-sobre-sub-title font-text">"Cuidamos da sua saúde mental com acolhimento e profissionalismo."</h2>
+            </div>
+            <div class="diferenciais">
+                <div class="diferenciais-img">
+                    <img src="./img/clinica.jpg" alt="Imagem da clínica">
+                    
+                </div>
+                
+                <div class="diferenciais-icon-container">
+                    <div class="diferenciais-icon">
+                        <img src="./img/difbrain.svg" alt="Cérebro">
+                    </div>
+                    <div class="diferenciais-icon-conteudo">
+                        <h3>Abordagem personalizada</h3>
+                        <p class="font-text">Terapias ajustadas às suas necessidades.</p>
+                    </div>
+                    <div class="traco-mobile1">
+                        <img src="./img/traco-mobile1.svg" alt="tracejado">
+                    </div>
+                </div>
+
+                <div class="diferenciais-icon-container">
+                    <div class="diferenciais-icon">
+                        <img src="./img/difplant.svg" alt="Planta">
+                    </div>
+                    <div class="diferenciais-icon-conteudo">
+                        <h3>Bem-estar contínuo</h3>
+                        <p class="font-text">Foco no desenvolvimento emocional.</p>
+                    </div>
+                    <div class="traco-mobile1">
+                        <img src="./img/traco-mobile2.svg" alt="tracejado">
+                    </div>
+                </div>
+
+                <div class="diferenciais-icon-container">
+                    <div class="diferenciais-icon">
+                        <img src="./img/difhand.svg" alt="Mão segurando um coração">
+                    </div>
+                    <div class="diferenciais-icon-conteudo">
+                        <h3>Atendimento acolhedor</h3>
+                        <p class="font-text">Espaço seguro e sem julgamentos.</p>
+                    </div>
+                    <div class="traco-mobile1">
+                        <img src="./img/traco-mobile1.svg" alt="tracejado">
+                    </div>
+                </div>
+
+                <div class="diferenciais-icon-container">
+                    <div class="diferenciais-icon">
+                        <img src="./img/difclook.svg" alt="Relógio">
+                    </div>
+                    <div class="diferenciais-icon-conteudo">
+                        <h3>Flexibilidade de horários</h3>
+                        <p class="font-text">Consultas que se adapta à sua rotina.</p>
+                    </div>
+                </div>
+                
+                <img src="./img/traco1.svg" alt="tracejado" class="traco1 js-traco-desktop">
+                <img src="./img/traco2.svg" alt="tracejado" class="traco2 js-traco-desktop">
+                <img src="./img/traco3.svg" alt="tracejado" class="traco3 js-traco-desktop">
+                <img src="./img/traco4.svg" alt="tracejado" class="traco4 js-traco-desktop">
+                
+            </div>
+            <div class="sobre-contato">
+                <a href="#" class="link-saiba-mais font-text">saiba mais</a>
+                <a href="#" class="contato-btn font-text">Contato</a>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="servicos-bg">
+        <div class="container servico-container">
+            
+            <div class="servicos-container-titulo">
+                <h1 class="servicos-title js-servicos-title">Serviços</h1>
+                <h2 class="servicos-sub-title js-servicos-sub-title font-text">Oferecemos terapia individual, de casal e familiar, além de apoio psicológico para crianças, adolescentes e adultos. Nossos serviços incluem também orientação profissional e tratamento para ansiedade, depressão e crises. Cada atendimento é realizado com acolhimento, respeito e foco no seu bem-estar emocional.</h2>
+            </div>
+
+
+            <div class="card container js-card js-card-desktop">
+
+                <div class="card-users js-card-users">
+                    <div class="card-users-detalhe1">
+                        <div class="detalhe-azul"></div>
+                    </div>
+                    <div class="card-user-conteudo ">
+                        <h3>Tratamento para <span>Ansiedade</span></h3>
+                        <p class="font-text ">Oferecemos tratamento especializado para ansiedade, ajudando você a compreender e gerenciar os sintomas, promovendo uma vida mais equilibrada.</p>
+                        <a class="saiba-mais-servicos font-text" href="#">Saiba Mais</a>
+                    </div>
+                </div>
+
+                <div class="card-users js-card-users">
+                    <div class="card-users-detalhe2">
+                        <div class="detalhe-azul"></div>
+                    </div>
+                    <div class="card-user-conteudo">
+                        <h3>Tereapia <span>Individual</span></h3>
+                        <p class="font-text ">A terapia individual oferece um espaço seguro para explorar emoções, superar desafios e promover o autoconhecimento, com foco no seu bem-estar.</p>
+                        <a class="saiba-mais-servicos font-text" href="#">Saiba Mais</a>
+                    </div>
+                </div>
+
+                <div class="card-users js-card-users">
+                    <div class="card-users-detalhe3">
+                        <div class="detalhe-azul"></div>
+                    </div>
+                    <div class="card-user-conteudo">
+                        <h3>Terapia <span>de Casal</span></h3>
+                        <p class="font-text ">A terapia de casal ajuda a melhorar a comunicação e resolver conflitos, fortalecendo o relacionamento e promovendo maior harmonia entre os parceiros.</p>
+                        <a class="saiba-mais-servicos font-text" href="#">Saiba Mais</a>
+                    </div>
+                </div>
+
+                <div class="card-users js-card-users">
+                    <div class="card-users-detalhe4">
+                        <div class="detalhe-azul"></div>
+                    </div>
+                    <div class="card-user-conteudo">
+                        <h3>Psicoterapia <span>Online</span></h3>
+                        <p class="font-text ">Oferecemos psicoterapia online para quem busca flexibilidade no atendimento, mantendo a qualidade e o acolhimento de forma segura e conveniente.</p>
+                        <a class="saiba-mais-servicos font-text" href="#">Saiba Mais</a>
+                    </div>
+                </div>
+
+                <div class="card-users js-card-users">
+                    <div class="card-users-detalhe5">
+                        <div class="detalhe-azul"></div>
+                    </div>
+                    <div class="card-user-conteudo">
+                        <h3>Terapia <span>Familiar</span></h3>
+                        <p class="font-text ">A terapia familiar busca melhorar a dinâmica e a convivência entre os membros da família, promovendo compreensão mútua e resolução de conflitos.</p>
+                        <a class="saiba-mais-servicos font-text" href="#">Saiba Mais</a>
+                    </div>
+                </div>
+                
+                <div class="card-users js-card-users">
+                    <div class="card-users-detalhe6">
+                        <div class="detalhe-azul"></div>
+                    </div>
+                    <div class="card-user-conteudo">
+                        <h3>Trataemento <span>para Ansiedade</span></h3>
+                        <p class="font-text ">Oferecemos tratamento especializado para ansiedade, ajudando você a compreender e gerenciar os sintomas, promovendo uma vida mais equilibrada.</p>
+                        <a class="saiba-mais-servicos font-text" href="#">Saiba Mais</a>
+                    </div>
+                </div>
+                
+
+            </div>
+
+
+<!-- ...... SERVIÇOS MOBILE ...................................................................... -->
+        
+        <div class="swiper">
+
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide card-users">
+                    <div class="card-users-detalhe1">
+                        <div class="detalhe-azul"></div>
+                    </div>
+                    <div class="card-user-conteudo">
+                        <h3>Tratamento para <span>Ansiedade</span></h3>
+                        <p class="font-text ">Oferecemos tratamento especializado para ansiedade, ajudando você a compreender e gerenciar os sintomas, promovendo uma vida mais equilibrada.</p>
+                        <a class="saiba-mais-servicos font-text" href="#">Saiba Mais</a>
+                    </div>
+                </div>
+                <div class="swiper-slide card-users">
+                    <div class="card-users-detalhe2">
+                        <div class="detalhe-azul"></div>
+                    </div>
+                    <div class="card-user-conteudo">
+                        <h3>Tereapia <span>Individual</span></h3>
+                        <p class="font-text ">A terapia individual oferece um espaço seguro para explorar emoções, superar desafios e promover o autoconhecimento, com foco no seu bem-estar.</p>
+                        <a class="saiba-mais-servicos font-text" href="#">Saiba Mais</a>
+                    </div>
+                </div>
+                <div class="swiper-slide card-users">
+                    <div class="card-users-detalhe3">
+                        <div class="detalhe-azul"></div>
+                    </div>
+                    <div class="card-user-conteudo">
+                        <h3>Terapia <span>de Casal</span></h3>
+                        <p class="font-text ">A terapia de casal ajuda a melhorar a comunicação e resolver conflitos, fortalecendo o relacionamento e promovendo maior harmonia entre os parceiros.</p>
+                        <a class="saiba-mais-servicos font-text" href="#">Saiba Mais</a>
+                    </div>
+                </div>
+                <div class="swiper-slide card-users">
+                    <div class="card-users-detalhe4">
+                        <div class="detalhe-azul"></div>
+                    </div>
+                    <div class="card-user-conteudo">
+                        <h3>Psicoterapia <span>Online</span></h3>
+                        <p class="font-text ">Oferecemos psicoterapia online para quem busca flexibilidade no atendimento, mantendo a qualidade e o acolhimento de forma segura e conveniente.</p>
+                        <a class="saiba-mais-servicos font-text" href="#">Saiba Mais</a>
+                    </div>
+                </div>
+                <div class="swiper-slide card-users">
+                    <div class="card-users-detalhe5">
+                        <div class="detalhe-azul"></div>
+                    </div>
+                    <div class="card-user-conteudo">
+                        <h3>Terapia <span>Familiar</span></h3>
+                        <p class="font-text ">A terapia familiar busca melhorar a dinâmica e a convivência entre os membros da família, promovendo compreensão mútua e resolução de conflitos.</p>
+                        <a class="saiba-mais-servicos font-text" href="#">Saiba Mais</a>
+                    </div>
+                </div>
+                <div class="swiper-slide card-users">
+                    <div class="card-users-detalhe6">
+                        <div class="detalhe-azul"></div>
+                    </div>
+                    <div class="card-user-conteudo">
+                        <h3>Trataemento <span>para Ansiedade</span></h3>
+                        <p class="font-text ">Oferecemos tratamento especializado para ansiedade, ajudando você a compreender e gerenciar os sintomas, promovendo uma vida mais equilibrada.</p>
+                        <a class="saiba-mais-servicos font-text" href="#">Saiba Mais</a>
+                    </div>
+                </div>
+                
+            </div>
+
+            <div class="swiper-pagination"></div>
+        
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+
+        </div>
+            
+        </div>
+    </section>
+
+    <section class="chamada-bg">
+    
+        <div class="container chamada">
+            <div class="chamada-conteudo">
+                <p class="chamada-conteudo-texto js-chamada-conteudo-texto">
+                    Se você tem dúvidas ou gostaria de agendar uma consulta, estamos aqui para ajudar.
+                </p>
+                <a href="#" class="botao-verde js-botao-chamada">agende sua consulta</a>
+            </div>
+            <div class="chamada-img js-chamada-img">
+                <img src="./img/img-chamada.jpg" alt="Mulher relaxando">
+            </div>
+        </div>
+    
+    </section>
+    
+    <div class="wavy">
+        <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ffffff" fill-opacity="1" d="M0,128L80,122.7C160,117,320,107,480,122.7C640,139,800,181,960,181.3C1120,181,1280,139,1360,117.3L1440,96L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z"></path></svg> -->
+        <img src="./img/wavy.svg" alt="">
+    </div>
+    
+    <section class="equipe container" id="equipe">
+        <h1 class="equipe-title js-equipe-title">Nossa Equipe</h1>
+        <div class="equipe-container">
+    
+            <!-- CONTAINER DA ESQUERDA -->
+    
+            <div class="equipe-container-left js-tabmenu">
+    
+                <ul class="equipe-card js-equipe-card">
+                    <li>
+                        <div class="equipe-card-img">
+                            <img src="./img/avatar1.jpg" alt="Mulher sentada">
+                        </div>
+                        <h3 class="equipe-card-nome font-text">Sofia Oliveira</h3>
+                        <p class="equipe-card-area">Psicologia Clínica e Terapia Cognitivo-Comportamental (TCC)</p>
+                        <div class="equipe-card-divider"></div> <!-- Linha separadora -->
+                        <div class="equipe-card-info">
+                            <a href="#" class="font-text"><img src="./img/info.svg" alt="ícone de info">CONHECER MAIS</a>
+                        </div>
+                    </li>
+                </ul>
+    
+                <ul class="equipe-card js-equipe-card">
+                    <li>
+                        <div class="equipe-card-img">
+                            <img src="./img/avatar2.jpg" alt="Mulher sentada">
+                        </div>
+                        <h3 class="equipe-card-nome font-text">Mariana Costa</h3>
+                        <p class="equipe-card-area">Psicologia Clínica e Terapia Cognitivo-Comportamental (TCC)</p>
+                        <div class="equipe-card-divider"></div> <!-- Linha separadora -->
+                        <div class="equipe-card-info">
+                            <a href="#" class="font-text"><img src="./img/info.svg" alt="ícone de info">CONHECER MAIS</a>
+                        </div>
+                    </li>
+                </ul>
+    
+                <ul class="equipe-card js-equipe-card">
+                    <li>
+                        <div class="equipe-card-img">
+                            <img src="./img/avatar3.jpg" alt="Mulher sentada">
+                        </div>
+                        <h3 class="equipe-card-nome font-text">Laura Mendes</h3>
+                        <p class="equipe-card-area">Psicóloga <br> Humanista</p>
+                        <div class="equipe-card-divider"></div> <!-- Linha separadora -->
+                        <div class="equipe-card-info">
+                            <a href="#" class="font-text"><img src="./img/info.svg" alt="ícone de info">CONHECER MAIS</a>
+                        </div>
+                    </li>
+                </ul>
+    
+                <ul class="equipe-card js-equipe-card">
+                    <li>
+                        <div class="equipe-card-img">
+                            <img src="./img/avatar4.jpg" alt="Mulher sentada">
+                        </div>
+                        <h3 class="equipe-card-nome font-text">Renata Albuquerque</h3>
+                        <p class="equipe-card-area">Psicóloga <br> Psicanalítica</p>
+                        <div class="equipe-card-divider"></div> <!-- Linha separadora -->
+                        <div class="equipe-card-info">
+                            <a href="#" class="font-text"><img src="./img/info.svg" alt="ícone de info">CONHECER MAIS</a>
+                        </div>
+                    </li>
+                </ul>
+    
+            </div>
+    
+            <!-- CONTAINER DA DIREITA -->
+    
+            <div class="equipe-container-right js-tabcontent">
+    
+                <div class="profissional">
+    
+                    <div class="equipe-container-right-conteudo">
+                        <h4 class="font-text">Quem sou eu?</h4>
+                        <h2>Sofia<br>Oliveira</h2>
+                        <h3 class="font-text">Psicologia Clínica e Terapia Cognitivo Comportamental (TCC)</h3>
+                        <p class="font-text">Graduada em Psicologia pela Universidade de São Paulo (USP), com especialização em Terapia Cognitivo-Comportamental. Possui mais de 8 anos de experiência no atendimento de transtornos de ansiedade e depressão.</p>
+                        <a href="#" class="botao-roxo">Agendar Consulta</a>
+                    </div>
+    
+                    <div class="equipe-container-right-img">
+                        <img src="./img/equipe1.jpg" alt="Mulher">
+                    </div>
+                </div>
+    
+                <div class="profissional">
+    
+                    <div class="equipe-container-right-conteudo">
+                        <h4 class="font-text">Quem sou eu?</h4>
+                        <h2>Mariana<br>Costa</h2>
+                        <h3 class="font-text">Psicologia Clínica e Terapia Cognitivo Comportamental (TCC)</h3>
+                        <p class="font-text">Formada pela USP, com 10 anos de experiência em ansiedade e depressão. Atua com terapia breve e técnicas de reestruturação cognitiva, ajudando pacientes a desenvolverem estratégias eficazes.</p>
+                        <a href="#" class="botao-roxo">Agendar Consulta</a>
+                    </div>
+    
+                    <div class="equipe-container-right-img">
+                        <img src="./img/equipe2.jpg" alt="Mulher">
+                    </div>
+                </div>
+    
+                <div class="profissional">
+    
+                    <div class="equipe-container-right-conteudo">
+                        <h4 class="font-text">Quem sou eu?</h4>
+                        <h2>Laura <br>Mendes</h2>
+                        <h3 class="font-text">Psicóloga Humanista</h3>
+                        <p class="font-text">Graduada pela UFRJ, com especialização em Gestalt-terapia. Há 8 anos auxilia no autoconhecimento e desenvolvimento pessoal, focando na escuta ativa e na expressão emocional para promover mudanças positivas.</p>
+                        <a href="#" class="botao-roxo">Agendar Consulta</a>
+                    </div>
+    
+                    <div class="equipe-container-right-img">
+                        <img src="./img/equipe3.jpg" alt="Mulher">
+                    </div>
+                </div>
+    
+                <div class="profissional">
+    
+                    <div class="equipe-container-right-conteudo">
+                        <h4 class="font-text">Quem sou eu?</h4>
+                        <h2>Renata<br>Albuquerque</h2>
+                        <h3 class="font-text">Psicóloga Psicanalítica</h3>
+                        <p class="font-text"> ]Formada pela PUC-SP, com 12 anos de experiência em análise do inconsciente e conflitos emocionais. Trabalha com interpretação de sonhos e associações livres, ajudando pacientes a compreenderem padrões internos.</p>
+                        <a href="#" class="botao-roxo">Agendar Consulta</a>
+                    </div>
+    
+                    <div class="equipe-container-right-img">
+                        <img src="./img/equipe4.jpg" alt="Mulher">
+                    </div>
+                </div>
+    
+            </div>
+    
+    
+        </div>
+    </section>
+    
+    <div class="wavy2">
+        <img src="./img/wavy2.svg" alt="">
+        <div class="vazando">
+            <h1>O que falam nossos clientes?</h1>
+        </div>
+    </div>
+    
+    <section class="testimonials-bg">
+        <div class="testimonials container"></div>
+    </section>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/ScrollToPlugin.min.js"></script>
     <script src="https://unpkg.com/scrollreveal"></script>
     <script src="./script.js"></script>
 </body>

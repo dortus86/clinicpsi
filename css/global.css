@@ -5,11 +5,11 @@
 }
 
 html {
-    height: 5000px;
+    height: 8000px;
 }
 
 body {
-    font-family: "Poppins", serif;
+    font-family: "Poppins", sans-serif;
     background-color: var(--cor-branco-01);
     height: 5000px;
 }

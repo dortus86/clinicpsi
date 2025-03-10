@@ -1,0 +1,169 @@
+   
+    <section class="chamada-bg">
+
+        <div class="container chamada">
+            <div class="chamada-conteudo">
+                <p class="chamada-conteudo-texto js-chamada-conteudo-texto">
+                    Se você tem dúvidas ou gostaria de agendar uma consulta, estamos aqui para ajudar.
+                </p>
+                <a href="#" class="botao-verde js-botao-chamada">agende sua consulta</a>
+            </div>
+            <div class="chamada-img js-chamada-img">
+                <img src="./img/img-chamada.jpg" alt="Mulher relaxando">
+            </div>
+        </div>
+
+    </section>
+
+    <div class="wavy">
+        <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ffffff" fill-opacity="1" d="M0,128L80,122.7C160,117,320,107,480,122.7C640,139,800,181,960,181.3C1120,181,1280,139,1360,117.3L1440,96L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z"></path></svg> -->
+         <img src="./img/wavy.svg" alt="">
+    </div>
+
+    <section class="equipe container" id="equipe">
+        <h1 class="equipe-title js-equipe-title">Nossa Equipe</h1>
+        <div class="equipe-container">
+
+            <!-- CONTAINER DA ESQUERDA -->
+
+            <div class="equipe-container-left js-tabmenu">
+                
+                <ul class="equipe-card js-equipe-card">
+                    <li>
+                       <div class="equipe-card-img">
+                            <img src="./img/avatar1.jpg" alt="Mulher sentada">
+                       </div> 
+                       <h3 class="equipe-card-nome font-text">Sofia Oliveira</h3>
+                       <p class="equipe-card-area">Psicologia Clínica e Terapia Cognitivo-Comportamental (TCC)</p>
+                       <div class="equipe-card-divider"></div> <!-- Linha separadora -->
+                       <div class="equipe-card-info">
+                            <a href="#" class="font-text"><img src="./img/info.svg" alt="ícone de info">CONHECER MAIS</a>
+                       </div>
+                    </li>
+                </ul>
+
+                <ul class="equipe-card js-equipe-card">
+                    <li>
+                       <div class="equipe-card-img">
+                            <img src="./img/avatar2.jpg" alt="Mulher sentada">
+                       </div> 
+                       <h3 class="equipe-card-nome font-text">Mariana Costa</h3>
+                       <p class="equipe-card-area">Psicologia Clínica e Terapia Cognitivo-Comportamental (TCC)</p>
+                       <div class="equipe-card-divider"></div> <!-- Linha separadora -->
+                       <div class="equipe-card-info">
+                            <a href="#" class="font-text"><img src="./img/info.svg" alt="ícone de info">CONHECER MAIS</a>
+                       </div>
+                    </li>
+                </ul>
+
+                <ul class="equipe-card js-equipe-card">
+                    <li>
+                       <div class="equipe-card-img">
+                            <img src="./img/avatar3.jpg" alt="Mulher sentada">
+                       </div> 
+                       <h3 class="equipe-card-nome font-text">Laura Mendes</h3>
+                       <p class="equipe-card-area">Psicóloga <br> Humanista</p>
+                       <div class="equipe-card-divider"></div> <!-- Linha separadora -->
+                       <div class="equipe-card-info">
+                            <a href="#" class="font-text"><img src="./img/info.svg" alt="ícone de info">CONHECER MAIS</a>
+                       </div>
+                    </li>
+                </ul>
+
+                <ul class="equipe-card js-equipe-card">
+                    <li>
+                       <div class="equipe-card-img">
+                            <img src="./img/avatar4.jpg" alt="Mulher sentada">
+                       </div> 
+                       <h3 class="equipe-card-nome font-text">Renata Albuquerque</h3>
+                       <p class="equipe-card-area">Psicóloga <br> Psicanalítica</p>
+                       <div class="equipe-card-divider"></div> <!-- Linha separadora -->
+                       <div class="equipe-card-info">
+                            <a href="#" class="font-text"><img src="./img/info.svg" alt="ícone de info">CONHECER MAIS</a>
+                       </div>
+                    </li>
+                </ul>
+
+            </div>
+
+            <!-- CONTAINER DA DIREITA -->
+
+            <div class="equipe-container-right js-tabcontent">
+
+                <div class="profissional">
+
+                    <div class="equipe-container-right-conteudo">
+                        <h4 class="font-text">Quem sou eu?</h4>
+                        <h2>Sofia<br>Oliveira</h2>
+                        <h3 class="font-text">Psicologia Clínica e Terapia Cognitivo Comportamental (TCC)</h3>
+                        <p class="font-text">Graduada em Psicologia pela Universidade de São Paulo (USP), com especialização em Terapia Cognitivo-Comportamental. Possui mais de 8 anos de experiência no atendimento de transtornos de ansiedade e depressão.</p>
+                        <a href="#" class="botao-roxo">Agendar Consulta</a>
+                    </div>
+
+                    <div class="equipe-container-right-img">
+                        <img src="./img/equipe1.jpg" alt="Mulher">
+                    </div>
+                </div>
+
+                <div class="profissional">
+
+                    <div class="equipe-container-right-conteudo">
+                        <h4 class="font-text">Quem sou eu?</h4>
+                        <h2>Mariana<br>Costa</h2>
+                        <h3 class="font-text">Psicologia Clínica e Terapia Cognitivo Comportamental (TCC)</h3>
+                        <p class="font-text">Formada pela USP, com 10 anos de experiência em ansiedade e depressão. Atua com terapia breve e técnicas de reestruturação cognitiva, ajudando pacientes a desenvolverem estratégias eficazes.</p>
+                        <a href="#" class="botao-roxo">Agendar Consulta</a>
+                    </div>
+
+                    <div class="equipe-container-right-img">
+                        <img src="./img/equipe2.jpg" alt="Mulher">
+                    </div>
+                </div>
+
+                <div class="profissional">
+
+                    <div class="equipe-container-right-conteudo">
+                        <h4 class="font-text">Quem sou eu?</h4>
+                        <h2>Laura <br>Mendes</h2>
+                        <h3 class="font-text">Psicóloga Humanista</h3>
+                        <p class="font-text">Graduada pela UFRJ, com especialização em Gestalt-terapia. Há 8 anos auxilia no autoconhecimento e desenvolvimento pessoal, focando na escuta ativa e na expressão emocional para promover mudanças positivas.</p>
+                        <a href="#" class="botao-roxo">Agendar Consulta</a>
+                    </div>
+
+                    <div class="equipe-container-right-img">
+                        <img src="./img/equipe3.jpg" alt="Mulher">
+                    </div>
+                </div>
+
+                <div class="profissional">
+
+                    <div class="equipe-container-right-conteudo">
+                        <h4 class="font-text">Quem sou eu?</h4>
+                        <h2>Renata<br>Albuquerque</h2>
+                        <h3 class="font-text">Psicóloga Psicanalítica</h3>
+                        <p class="font-text"> ]Formada pela PUC-SP, com 12 anos de experiência em análise do inconsciente e conflitos emocionais. Trabalha com interpretação de sonhos e associações livres, ajudando pacientes a compreenderem padrões internos.</p>
+                        <a href="#" class="botao-roxo">Agendar Consulta</a>
+                    </div>
+
+                    <div class="equipe-container-right-img">
+                        <img src="./img/equipe4.jpg" alt="Mulher">
+                    </div>
+                </div>
+
+            </div>
+            
+
+        </div>
+    </section>
+
+    <div class="wavy2">
+         <img src="./img/wavy2.svg" alt="">
+         <div class="vazando">
+            <h1>O que falam nossos clientes?</h1>
+         </div>
+    </div>
+
+    <section class="testimonials-bg">
+        <div class="testimonials container"></div>
+    </section>
+

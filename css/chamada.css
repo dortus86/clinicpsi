@@ -1,0 +1,35 @@
+.chamada-bg {
+    background-color: var(--cor-roxo-400);
+    box-shadow: 0px 40px 0px var(--cor-branco-01) inset;
+}
+
+.chamada {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-between;
+    align-items: center;
+    gap: 80px;
+}
+
+.chamada-conteudo {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap: 20px;
+    padding-top: 20px;
+}
+
+.chamada-conteudo p {
+    font-size: 3rem;
+    color: var(--cor-cinza-950);
+    line-height: 1.4;
+}
+
+.chamada-img img {
+    display: block;
+    justify-self: end;
+    max-width: 80%;
+    border-radius: 4px;
+    margin-bottom: 40px;
+}
+

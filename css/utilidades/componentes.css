@@ -16,15 +16,32 @@
     text-transform: uppercase;
 }
 
+.botao-verde {
+    display: block;
+    background: var( --cor-verde-500);
+    color: var(--cor-branco-02);
+    font-size: 1.125rem;
+    padding: 12px 24px;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    text-transform: uppercase;
+    transition: 0.3s ease;
+}
+
 .botao-roxo:hover {
     background: transparent;
     color: var(--cor-cinza-950);
     outline: 2px solid var(--cor-cinza-950);
 }
 
+.botao-verde:hover {
+    background-color: var(--cor-verde-600);
+}
+
 @media (max-width: 1400px) {
     .container {
-        max-width: 1200px;
+        max-width: 1100px;
         padding-left: 40px;
         padding-right: 40px;
     }

@@ -1,0 +1,46 @@
+.testimonials-bg {
+    height: 200px;
+    background-color: var(--cor-verde-200);
+    margin-top: -1px;
+}
+
+.wavy2 {
+    position: relative; /* Define um contexto para elementos filhos com position absolute */
+    text-align: center;
+    margin-top: 40px;
+}
+
+.wavy2 img {
+    width: 100%;
+    transform: rotate(180deg);
+    padding-bottom: 120px;
+}
+
+.vazando {
+    width: 1000px; 
+    height: 200px; 
+    background-color: var(--cor-branco-00);
+    position: absolute;
+    left: 50%; /* Centraliza horizontalmente */
+    bottom: -50%; /* Posiciona na base da .wavy2 */
+    transform: translate(-50%, -50%); /* Move 50% para cima, criando o efeito de vazamento */
+    border-radius: 4px; 
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.02);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--cor-verde-700);
+}
+
+.vazando h1 {
+    font-size: 2rem;
+}
+
+.vazando::after {
+    content: "O que falam nossos clientes?";
+    position: absolute;
+    font-size: 4rem;
+    font-weight: 700;
+    top: 20px;
+    opacity: 5%;
+}
