@@ -12,6 +12,7 @@ body {
     font-family: "Poppins", sans-serif;
     background-color: var(--cor-branco-01);
     height: 5000px;
+    overflow-x: hidden;
 }
 
 h1, ul, p, h2, h3, blockquote, dd {

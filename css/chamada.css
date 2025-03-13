@@ -33,3 +33,49 @@
     margin-bottom: 40px;
 }
 
+@media (max-width: 1400px) {
+    .chamada-conteudo p {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 1200px) {
+    .chamada-conteudo p {
+        font-size: 1.5rem;
+    }
+    .chamada-img img {
+        max-width: 60%;
+    }
+}
+
+@media (max-width: 1000px) {
+    .chamada-conteudo p {
+        padding-top: 20px;
+    }
+    .chamada-conteudo .botao-verde {
+        font-size: 0.875rem;
+    }
+}
+
+@media (max-width: 900px) {
+    .chamada-img img {
+        display: none;
+    }
+    .chamada-bg {
+        box-shadow: none;
+    }
+    .chamada {
+        grid-template-columns: 1fr;
+        gap: 60px;
+    }
+    .chamada-conteudo {
+        align-items: center;
+        gap: 40px;
+        padding-top: 60px;
+    }
+    .chamada-conteudo p {
+        text-align: center;
+        max-width: 600px;
+    }
+}
+

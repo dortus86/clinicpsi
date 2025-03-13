@@ -371,7 +371,6 @@ function init_animacao_equipe() {
 function init_carrossel() {
 
     var swiper = new Swiper(".swiper", {
-        loop: true,
         grabCursor: true,
         navigation: {
             nextEl: ".swiper-button-next",
@@ -410,3 +409,78 @@ function init_carrossel() {
         }
     });
 } init_carrossel();
+
+// CÓDIGO PARA O MODAL DA SECTION DE EQUIPE
+function init_modalEquipe() {
+
+    const largura = window.innerWidth
+    const botao = document.querySelectorAll(".equipe-card-info a");
+    const botao1 = botao[0]
+    const botao2 = botao[1]
+    const botao3 = botao[2]
+    const botao4 = botao[3]
+    const closeSofia = document.querySelector('.close-sofia')
+    const closeMariana = document.querySelector(".close-mariana");
+    const closeLaura = document.querySelector(".close-laura");
+    const closeRenata = document.querySelector(".close-renata");
+    const modalSofia = document.querySelector(".modal-bg-sofia");
+    const modalMariana = document.querySelector(".modal-bg-mariana");
+    const modalLaura = document.querySelector(".modal-bg-laura");
+    const modalRenata = document.querySelector(".modal-bg-renata");
+
+
+    if (largura <= 1010) {
+        function desable(event) {
+            event.preventDefault();
+        };
+        botao.forEach((link) => {
+            link.addEventListener('click', desable)
+        });
+        botao1.addEventListener('click', () => {
+            modalSofia.classList.add("modal-bg-active");
+        });
+        botao2.addEventListener("click", () => {
+            modalMariana.classList.add("modal-bg-active");
+        });
+        botao3.addEventListener("click", () => {
+            modalLaura.classList.add("modal-bg-active");
+        });
+        botao4.addEventListener("click", () => {
+            modalRenata.classList.add("modal-bg-active");
+        });
+        closeSofia.addEventListener('click', () => {
+            modalSofia.classList.remove("modal-bg-active");
+        });
+        closeMariana.addEventListener("click", () => {
+            modalMariana.classList.remove("modal-bg-active");
+        });
+        closeLaura.addEventListener("click", () => {
+            modalLaura.classList.remove("modal-bg-active");
+        });
+        closeRenata.addEventListener("click", () => {
+            modalRenata.classList.remove("modal-bg-active");
+        });
+    } else {
+        console.log('maior que 900')
+    }
+}init_modalEquipe();
+
+revelarTitulo(".vazando", ".vazando h1");
+
+const testimonialCard1 = document.querySelectorAll(".js-testimonial-card")[0];
+const testimonialCard2 = document.querySelectorAll(".js-testimonial-card")[1];
+
+const scrollRevealOption = {
+    distance: "100px",
+    origin: "left",
+    duration: 1000,
+    reset: true,
+}
+
+ScrollReveal().reveal(testimonialCard1, {
+    ...scrollRevealOption
+});
+ScrollReveal().reveal(testimonialCard2, {
+    ...scrollRevealOption,
+    origin: "right"
+});
