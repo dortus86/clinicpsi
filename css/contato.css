@@ -1,0 +1,136 @@
+.contato-bg {
+    box-shadow: 0px 80px 0px var(--cor-verde-200) inset;
+}
+
+.contato {
+    display: flex;
+    justify-content: center;
+}
+
+.contato-img {
+    max-width: 480px;
+    border-radius: 4px 0 0 4px;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.2);
+}
+
+.contato-img img {
+    width: 100%;
+    height: 100%;
+    border-radius: 4px 0 0 4px;
+}
+
+.formulario-bg {
+    padding: 48px;
+    background-color: var(--cor-branco-02);
+    border-radius: 0 4px 4px 0;
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.1);
+}
+
+.formulario h3 {
+    color: var(--cor-cinza-500);
+    font-size: 1rem;
+    font-weight: 400;
+}
+.formulario h3:nth-of-type(2) {
+    padding-bottom: 20px;
+}
+
+.formulario h2 {
+    color: var(--cor-cinza-950);
+    font-weight: 500;
+    padding-bottom: 40px;
+}
+
+.col-1,
+.col-2 {
+    display: flex;
+    flex-direction: column;
+}
+
+.formulario-campos {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr 1fr;
+}
+
+.col-2 {
+    grid-column: span 2;
+}
+
+.formulario-campos label {
+    color: var(--cor-cinza-800);
+    padding-bottom: 8px;
+    font-size: 0.875rem;
+}
+
+.formulario input,
+.formulario textarea {
+    color: var(--cor-cinza-500);
+    font-family: "Nunito Sans", sans-serif;
+    padding: 8px;
+    font-size: 0.875rem;
+    background-color: var(--cor-branco-00);
+    border: 1px solid var(--cor-cinza-200);
+    border-radius: 4px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.formulario input:focus,
+.formulario textarea:focus {
+    outline: none;
+    border-color: var(--cor-verde-400);
+    box-shadow: 0 0 0 2px var(--cor-verde-100);
+}
+
+.formulario button {
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+@media (max-width: 1000px) {
+    .contato-img {
+        max-width: 360px;
+    }
+}
+
+@media (max-width: 900px) {
+    .contato-img {
+        display: none;
+    }
+    .formulario-bg {
+        border-radius: 4px;
+        margin-top: 80px;
+    }
+    .contato-bg {
+        box-shadow: 0px 160px 0px var(--cor-verde-200) inset;
+    }
+}
+
+@media (max-width: 600px) {
+    .formulario h3 {
+        font-size: 0.875rem;
+        font-weight: 400;
+    }
+    .formulario h3:nth-of-type(2) {
+        padding-bottom: 16px;
+    }
+    .formulario h2 {
+        font-size: 1.125rem;
+        padding-bottom: 32px;
+    }
+    .formulario-bg {
+        padding: 24px;
+    }
+    .formulario-campos label {
+        font-size: 0.75rem;
+    }
+    .formulario input,
+    .formulario textarea {
+        font-size: 0.75rem;
+    }
+    .formulario button {
+        padding: 16px 20px;
+        grid-column: span 2;
+    }
+}

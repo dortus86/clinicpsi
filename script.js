@@ -467,20 +467,23 @@ function init_modalEquipe() {
 
 revelarTitulo(".vazando", ".vazando h1");
 
-const testimonialCard1 = document.querySelectorAll(".js-testimonial-card")[0];
-const testimonialCard2 = document.querySelectorAll(".js-testimonial-card")[1];
+function init_animacao_depoimentos() {
 
-const scrollRevealOption = {
-    distance: "100px",
-    origin: "left",
-    duration: 1000,
-    reset: true,
-}
+    const testimonialCard1 = document.querySelectorAll(".js-testimonial-card")[0];
+    const testimonialCard2 = document.querySelectorAll(".js-testimonial-card")[1];
 
-ScrollReveal().reveal(testimonialCard1, {
-    ...scrollRevealOption
-});
-ScrollReveal().reveal(testimonialCard2, {
-    ...scrollRevealOption,
-    origin: "right"
-});
+    const scrollRevealOption = {
+        distance: "30px",
+        origin: "left",
+        duration: 1000,
+        reset: true,
+    }
+
+    ScrollReveal().reveal(testimonialCard1, {
+        ...scrollRevealOption
+    });
+    ScrollReveal().reveal(testimonialCard2, {
+        ...scrollRevealOption,
+        origin: "right",
+    });
+} init_animacao_depoimentos();

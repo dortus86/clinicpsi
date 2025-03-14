@@ -16,7 +16,8 @@
 }
 
 .vazando {
-    width: 1000px; 
+    width: 100%;
+    max-width: 1000px; 
     height: 200px; 
     background-color: var(--cor-branco-00);
     position: absolute;
@@ -53,7 +54,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 120px;
+    gap: 20px;
 }
 
 .testimonials-card {
