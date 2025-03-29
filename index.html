@@ -611,11 +611,11 @@
     
     <section class="contato-bg">
         <div class="contato container">
-            <div class="contato-img">
+            <div class="contato-img js-contato-img">
                 <img src="./img/contato.jpg" alt="mãos indo ao encontro uma da outra">
             </div>
 
-            <form class="formulario-bg" action="./">
+            <form class="formulario-bg js-formulario-bg" action="./">
                 <div class="formulario">
                     <h3>Possui alguma dúvida?</h3> 
                     <h3>Envie-nos uma mensagem.</h3>
@@ -644,7 +644,78 @@
         </div>
     </section>
     
+    <section class="faq container font-text">
+        <h1>Perguntas Frequentes (FAQs)</h1>
+        <dl class="faq-lista js-accordion">
+            <div class="perguntas-container js-perguntas-container">
+                <dt><button aria-controls="pergunta1" aria-expanded="true">1. Como agendar uma consulta na clínica?</button></dt>
+                <dd class="ativa" id="pergunta1">Você pode agendar sua consulta diretamente pelo telefone, WhatsApp ou preenchendo o formulário em nosso site. Nossa equipe entrará em contato para confirmar o horário e fornecer as orientações necessárias.</dd>
+            </div>
+            <div class="perguntas-container">
+                <dt><button aria-controls="pergunta2" aria-expanded="false">2. Qual a duração de uma sessão de terapia?</button></dt>
+                <dd id="pergunta2">Cada sessão de terapia dura, em média, 50 minutos. Esse tempo pode variar ligeiramente dependendo do tipo de abordagem terapêutica e das necessidades do paciente.</dd>
+            </div>
+            <div class="perguntas-container">
+                <dt><button aria-controls="pergunta3" aria-expanded="false">3. A clínica atende convênios?</button></dt>
+                <dd id="pergunta3">Sim, trabalhamos com diversos convênios de saúde. Consulte nossa equipe para verificar se o seu plano é aceito e os procedimentos necessários para utilizar o benefício.</dd>
+            </div>
+            <div class="perguntas-container">
+                <dt><button aria-controls="pergunta4" aria-expanded="false">4. É possível fazer terapia online?</button></dt>
+                <dd id="pergunta4">Sim, oferecemos sessões de terapia online, realizadas por meio de plataformas seguras e de fácil acesso. Essa modalidade é ideal para pacientes que têm dificuldades de locomoção ou que preferem atendimento no conforto de casa.</dd>
+            </div>
+            <div class="perguntas-container">
+                <dt><button aria-controls="pergunta5" aria-expanded="false">5. Como funciona a confidencialidade nas sessões de terapia?</button></dt>
+                <dd id="pergunta5">Todas as informações compartilhadas nas sessões são sigilosas, de acordo com o Código de Ética Profissional da Psicologia. O psicólogo somente poderá quebrar o sigilo em casos específicos, como risco iminente à vida, sempre com o objetivo de proteger o paciente.</dd>
+            </div>
+        </dl>
+    </section>
 
+    <footer class="footer-bg">
+        <div class="footer-container">
+            <div class="footer-left">
+                <div class="footer-img">
+                    <img src="./img/logo.svg" alt="">
+                </div>
+                <div class="detalhe"></div>
+                <div class="footer-conteudo-container">
+                    <div class="footer-conteudo-left">
+                        <p class="paragrafo-left">
+                            Cuidar da mente é o primeiro passo para transformar a vida. Estamos aqui para acompanhar você nessa jornada.
+                        </p>
+                        <ul>
+                            <li><a href="#">Sobre-Nós</a></li>
+                            <li><a href="#">Serviços</a></li>
+                            <li><a href="#">Profissionais</a></li>
+                            <li><a href="#">Depoimentos</a></li>
+                            <li><a href="#">Contato</a></li>
+                            <li><a href="#">FAQ</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-conteudo-centro">
+                        <h2>Contato</h2>
+                        <ul class="font-text">
+                            <li><img src="./img/telephone.svg" alt=""><a href="tel:+558133333333">+55 81 3333-3333</a></li>
+                            <li><img src="./img/whatsapp.svg" alt=""><a href="tel: +5581999999999">+55 81 99999-9999</a></li>
+                            <li><img src="./img/envelope.svg" alt=""><a href="mailto:contato@clinicpsi.com">contato@clinicpsi.com</a></li>
+                        </ul>
+                        <div class="endereco">
+                            <img src="./img/geo.svg" alt="">
+                            <p class="font-text">Avenida Agamenon Magalhães, 0000 - Paissandú
+                                Empresarial Renato Dias, Sala 000, Recife/PE
+                                CEP 52021170</p>
+                        </div>
+                    </div>
+                </div>    
+            </div>
+            <div class="footer-conteudo-right">
+                <img src="./img/mapa.jpg" alt="">
+            </div>
+        </div>
+        <div class="footer-copy font-text">
+            <p>clinicpsi © alguns direitos reservados</p> 
+            <p>Desenvolvido por <a href="/">Danyel Sales</a></p>
+        </div>
+    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js"></script>

@@ -23,6 +23,12 @@
 /* Contato */
 @import url(./contato.css);
 
+/* FAQ */
+@import url(./faq.css);
+
+/* footer */
+@import url(./footer.css);
+
 /* Global */
 @import url(./global.css);
 

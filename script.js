@@ -460,9 +460,7 @@ function init_modalEquipe() {
         closeRenata.addEventListener("click", () => {
             modalRenata.classList.remove("modal-bg-active");
         });
-    } else {
-        console.log('maior que 900')
-    }
+    } 
 }init_modalEquipe();
 
 revelarTitulo(".vazando", ".vazando h1");
@@ -487,3 +485,74 @@ function init_animacao_depoimentos() {
         origin: "right",
     });
 } init_animacao_depoimentos();
+
+function init_inim() {
+
+
+    const contatoImg = document.querySelector('.js-contato-img');
+    const contatoForm = document.querySelector(".js-formulario-bg");
+    const perguntas = document.querySelectorAll("dt");
+    const respostas = document.querySelectorAll("dd");
+
+    const scrollRevealOption = {
+        distance: "50px",
+        origin: "left",
+        duration: 1000,
+        reset: true
+    }
+    ScrollReveal().reveal(contatoImg, {
+        ...scrollRevealOption,
+    });
+    ScrollReveal().reveal(contatoForm ,{
+        ...scrollRevealOption,
+        origin: "right"
+    });
+    ScrollReveal().reveal(perguntas[0] ,{
+        ...scrollRevealOption,
+        origin: "bottom"
+    });
+    ScrollReveal().reveal(respostas[0] ,{
+        ...scrollRevealOption,
+        origin: "bottom"
+    });
+    ScrollReveal().reveal(perguntas[1] ,{
+        ...scrollRevealOption,
+        origin: "bottom",
+        delay: 300
+    });
+    ScrollReveal().reveal(perguntas[2] ,{
+        ...scrollRevealOption,
+        origin: "bottom",
+        delay: 400
+    });
+    ScrollReveal().reveal(perguntas[3] ,{
+        ...scrollRevealOption,
+        origin: "bottom",
+        delay: 500
+    });
+    ScrollReveal().reveal(perguntas[4] ,{
+        ...scrollRevealOption,
+        origin: "bottom",
+        delay: 600
+    });
+}
+init_inim();
+
+function faq() {
+
+    const perguntas = document.querySelectorAll(".js-accordion button");
+
+    function ativarPergunta (event) {
+        const pergunta = event.currentTarget; //celeciona o item clicado
+        const control = pergunta.getAttribute('aria-controls') //captura o id do item selecionado
+        const resposta = document.getElementById(control) //cola o id e seleciona
+
+        resposta.classList.toggle('ativa');
+        const ativa = resposta.classList.contains('ativa')
+        pergunta.setAttribute("aria-expanded", ativa);
+    }
+
+    perguntas.forEach((pergunta) => {
+        pergunta.addEventListener('click', ativarPergunta);
+    })
+} faq();
