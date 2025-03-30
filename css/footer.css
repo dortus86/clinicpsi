@@ -229,9 +229,9 @@
         text-align: center;
         margin-bottom: 80px;
     }
-    .footer-conteudo-centro {
+    /* .footer-conteudo-centro {
         background-color: var(--cor-verde-700);
         width: 100vw;
         padding: 40px;
-    }
+    } */
 }
