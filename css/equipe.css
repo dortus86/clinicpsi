@@ -387,6 +387,9 @@
     .equipe-container-left {
         grid-template-columns: 1fr;
     }
+    .equipe-card-info a {
+        font-size: 0.875rem;
+    }
     #modal-sofia,
     #modal-mariana,
     #modal-laura,
