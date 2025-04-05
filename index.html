@@ -20,17 +20,17 @@
 <body>
     <header id="header">
         <div id="js-header" class="header-bg container js-header">
-            <div class="logo">
-                <img src="./img/logo.svg" alt="Logo tipo">
+            <div class="logo js-logo">
+                <a href="#header"><img src="./img/logo.svg" alt="Logo tipo"></a>
             </div>
             <button id="btn-mobile">
                 <span id="burger"></span>
             </button>
-            <nav id="nav">
+            <nav id="nav" class="js-menu">
                 <ul class="nav-list">
-                    <li><a class="sz-16" href="#servicos">Sobre nós</a></li>
-                    <li><a href="#serviços">Serviços</a></li>
-                    <li><a href="#profissionais">Profissionais</a></li>
+                    <li><a class="sz-16" href="#sobre">Sobre nós</a></li>
+                    <li><a href="#servicos">Serviços</a></li>
+                    <li><a href="#equipe">Profissionais</a></li>
                     <li><a href="#depoimentos">Depoimentos</a></li>
                     <li><a href="#contato">Contato</a></li>
                 </ul>
@@ -107,7 +107,7 @@
 
     </section>
 
-    <section class="sobre-bg">
+    <section class="sobre-bg" id="sobre">
         <div class="container sobre-container">
             <div class="sobre-container-titulo">
                 <h1 class="sobre-title js-sobre-title">Sobre Nós</h1>
@@ -182,7 +182,7 @@
     </section>
 
 
-    <section class="servicos-bg">
+    <section class="servicos-bg" id="servicos">
         <div class="container servico-container">
             
             <div class="servicos-container-titulo">
@@ -579,7 +579,7 @@
 
     </section>
 
-    <div class="wavy2">
+    <div class="wavy2" id="depoimentos">
         <img src="./img/wavy2.svg" alt="">
         <div class="vazando">
             <h1>O que falam nossos clientes?</h1>
@@ -609,7 +609,7 @@
         </div>
     </section>
     
-    <section class="contato-bg">
+    <section class="contato-bg" id="contato">
         <div class="contato container">
             <div class="contato-img js-contato-img">
                 <img src="./img/contato.jpg" alt="mãos indo ao encontro uma da outra">
@@ -644,7 +644,7 @@
         </div>
     </section>
     
-    <section class="faq container font-text">
+    <section class="faq container font-text" id="faq">
         <h1>Perguntas Frequentes (FAQs)</h1>
         <dl class="faq-lista js-accordion">
             <div class="perguntas-container js-perguntas-container">
@@ -673,8 +673,8 @@
     <footer class="footer-bg">
         <div class="footer-container">
             <div class="footer-left">
-                <div class="footer-img">
-                    <img src="./img/logo.svg" alt="">
+                <div class="footer-img js-logo">
+                    <a href="#header"><img src="./img/logo.svg" alt="logo tipo"></a>
                 </div>
                 <div class="detalhe"></div>
                 <div class="footer-conteudo-container">
@@ -682,13 +682,13 @@
                         <p class="paragrafo-left">
                             Cuidar da mente é o primeiro passo para transformar a vida. Estamos aqui para acompanhar você nessa jornada.
                         </p>
-                        <ul>
-                            <li><a href="#">Sobre-Nós</a></li>
-                            <li><a href="#">Serviços</a></li>
-                            <li><a href="#">Profissionais</a></li>
-                            <li><a href="#">Depoimentos</a></li>
-                            <li><a href="#">Contato</a></li>
-                            <li><a href="#">FAQ</a></li>
+                        <ul class="js-menu">
+                            <li><a href="#sobre">Sobre-Nós</a></li>
+                            <li><a href="#servicos">Serviços</a></li>
+                            <li><a href="#equipe">Profissionais</a></li>
+                            <li><a href="#depoimentos">Depoimentos</a></li>
+                            <li><a href="#contato">Contato</a></li>
+                            <li><a href="#faq">FAQ</a></li>
                         </ul>
                     </div>
                     <div class="footer-conteudo-centro">
